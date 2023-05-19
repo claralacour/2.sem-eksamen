@@ -3,12 +3,16 @@
     /*declare variables here*/
     --primary-green: #00865E;
     --secondary-green: #75C59C;
+    --blue: #348585;
     --margin-nav-and-foot: 1rem;
     --margin-main: 1rem 2rem 1rem 2rem;
 }
 
+*{
+    font-family: 'inter', sans-serif;
+}
+
 body{
-    font-family: 'Inter', sans-serif;
     margin: 0;
 }
 
@@ -27,6 +31,19 @@ h1{
     font-weight: 600;
     font-size: 24px;
     color: white;
+}
+
+button{
+    background-color: var(--blue);
+    margin: 2rem;
+    width: 233px;
+    height: 34px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 
@@ -51,4 +68,19 @@ input{
     font-family: 'inter', sans-serif;
     padding-left: 1rem;
 }
+
+.waves{
+    position: absolute;
+    top: 55%;
+}
+
+.blogcontainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+
+
 

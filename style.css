@@ -1,7 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,600;0,700;1,600&display=swap');
 :root{
-    --margin: 1rem 3rem 1rem 3rem;
+    /*declare variables here*/
+    --primary-green: #00865E;
+    --secondary-green: #75C59C;
+    --margin-nav-and-foot: 1rem;
+    --margin-main: 1rem 2rem 1rem 2rem;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+
+nav{
+    background-color: #00976A;
+
 }
 
 .logo{
     height: 28px;
+    margin: var(--margin-nav-and-foot);
 }
+
+h1{
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+}
+
+
+.top-design{
+    position: relative;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(0,151,106);
+    background: linear-gradient(180deg, rgba(0,151,106,1) 0%, rgba(130,220,174,1) 100%);
+}
+
+input{
+    margin: var(--margin-main);
+    width: 20rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+    font-family: 'inter', sans-serif;
+    padding-left: 1rem;
+}
+

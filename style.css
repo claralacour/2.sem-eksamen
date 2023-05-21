@@ -69,18 +69,53 @@ input{
     padding-left: 1rem;
 }
 
-.waves{
+.wavetop{
+
+}
+.wavetop {
     position: absolute;
-    top: 55%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-.blogcontainer{
+.wavetop svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.wavetop .shape-fill {
+    fill: #5AC58F;
+}
+
+.bottomwave{
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.wavebtm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.wavebtm .shape-fill {
+    fill: #5AC58F;
+}
+
+.blog-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 27px;
 }
-
 
 

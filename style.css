@@ -46,6 +46,12 @@ button{
     font-size: 20px;
 }
 
+section{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 .top-design{
     position: relative;
@@ -69,9 +75,6 @@ input{
     padding-left: 1rem;
 }
 
-.wavetop{
-
-}
 .wavetop {
     position: absolute;
     bottom: 0;

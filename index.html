@@ -9,12 +9,12 @@
 </head>
 <body>
     <nav>
-        <a href="#"><img class="logo" src="img/greenwheels.svg" alt="GreenWheels logo"></a>
+        <a href="#"><img class="logo" src="img/graphics/greenwheels.svg" alt="GreenWheels logo"></a>
     </nav>
     <section class="top-design">
         <h1>Skift til elbil, nemt og overskueligt!</h1>
         <input type="text" placeholder="Indtast din benzin/diesel bil">
-        <img src="img/arrow.svg" alt="Sammenligningspil">
+        <img src="img/graphics/arrow.svg" alt="Sammenligningspil">
         <input type="text" placeholder="Indtast din ønskede elbil">
         <button>Sammenlign!</button>
         <div class="wavetop">
@@ -25,6 +25,7 @@
             </svg>
         </div>
     </section>
+
     <section class="bottomwave">
         <div class="wavebtm">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -34,9 +35,40 @@
             </svg>
         </div>
     </section>
-    <h2>Nyeste viden om elbiler</h2>
-    <div class="blog-container">
 
-    </div>
+    <h2>Nyeste viden om elbiler</h2>
+
+    <section class="blog-wrapper">
+        <button class="arrow" id="slide-arrow-prev"><img class="arrow-graphic-prev" src="img/graphics/prev-arrow.svg" alt="Pil til forrige slide"></button>
+        <button class="arrow" id="slide-arrow-next"><img class="arrow-graphic-next" src="img/graphics/next-arrow.svg" alt="Pil til næste slide"></button>
+        
+        <ul class="blog-container" id="blog-container">
+            <li class="post">
+                <img src="img/blogpost/blog1.png" alt="Elbil">
+                <h3>Elbilens CO2 udslip</h3>
+            </li>
+            <li class="post">
+                <img src="img/blogpost/blog2.png" alt="Elbil til opladning">
+                <h3>Hvilken ladetype skal jeg bruge?</h3>
+            </li>
+            <li class="post">
+                <img src="img/blogpost/blog3.png" alt="Miljø og genbrug">
+                <h3>Grøn afgift for elbil</h3>
+            </li>
+            <li class="post">
+                <img src="img/blogpost/blog4.png" alt="Elbil til opladning">
+                <h3>Den elektriske revolution</h3>
+            </li>
+            <li class="post">
+                <img src="img/blogpost/blog5.png" alt="Lademuligheder for elbil">
+                <h3>Opdag kraften i elbiler</h3>
+            </li>
+            <li class="post">
+                <img src="img/blogpost/blog6.png" alt="Rækkevidde og opladning elbil">
+                <h3>Fremtidens kørsel er elektrisk</h3>
+            </li>
+        </ul>
+    </section>
+
 </body>
 </html>

@@ -33,6 +33,17 @@ h1{
     color: white;
 }
 
+h2{
+    margin: var(--margin-main);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 15px;
+}
+
 button{
     background-color: var(--blue);
     margin: 2rem;
@@ -113,12 +124,67 @@ input{
     fill: #5AC58F;
 }
 
+.arrow{
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: var(--blue);
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity 100ms;
+}
+
+
+#slide-arrow-prev{
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next{
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.arrow-graphic-prev{
+    padding-top: 1.5rem;
+}
+.arrow-graphic-next{
+    padding-top: 1.5rem;
+}
+
+.blog-wrapper{
+    margin: var(--margin-main);
+    position: relative;
+    overflow: hidden;
+}
+
 .blog-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 27px;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.blog-container::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.post img{
+    height: 9rem;
+    padding: 1rem;
+    flex: 1 0 100%;
 }
 
 

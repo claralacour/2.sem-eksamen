@@ -5,7 +5,7 @@
     --secondary-green: #75C59C;
     --blue: #348585;
     --margin-nav-and-foot: 1rem;
-    --margin-main: 1rem 2rem 1rem 2rem;
+    --margin-main:  1rem 2rem 1rem 2rem;
 }
 
 *{
@@ -41,7 +41,7 @@ h2{
 
 h3{
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 button{
@@ -86,6 +86,8 @@ input{
     padding-left: 1rem;
 }
 
+/*waves*/
+
 .wavetop {
     position: absolute;
     bottom: 0;
@@ -124,40 +126,7 @@ input{
     fill: #5AC58F;
 }
 
-.arrow{
-    position: absolute;
-    display: flex;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 4rem;
-    background-color: var(--blue);
-    width: 2rem;
-    font-size: 3rem;
-    padding: 0;
-    cursor: pointer;
-    transition: opacity 100ms;
-}
-
-
-#slide-arrow-prev{
-    left: 0;
-    padding-left: 0.25rem;
-    border-radius: 0 2rem 2rem 0;
-}
-
-#slide-arrow-next{
-    right: 0;
-    padding-left: 0.75rem;
-    border-radius: 2rem 0 0 2rem;
-}
-
-.arrow-graphic-prev{
-    padding-top: 1.5rem;
-}
-.arrow-graphic-next{
-    padding-top: 1.5rem;
-}
+/*Blogindlæg siden"*/
 
 .blog-wrapper{
     margin: var(--margin-main);
@@ -186,5 +155,51 @@ input{
     padding: 1rem;
     flex: 1 0 100%;
 }
+
+.post p{
+    font-size: 15px;
+}
+
+.post a{
+    text-decoration: none;
+    font-style: italic;
+    color: var(--blue);
+}
+
+.arrow{
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 50%;
+    margin: auto;
+    height: 4rem;
+    background-color: var(--blue);
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+#slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+
+#slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+
+.chevronarrowleft{
+    padding-top: 1.8rem;
+}
+
+.chevronarrowright{
+    padding-top: 1.8rem;
+}
+
 
 

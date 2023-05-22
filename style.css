@@ -16,7 +16,6 @@ body{
     margin: 0;
 }
 
-
 nav{
     background-color: #00976A;
 
@@ -46,7 +45,7 @@ h3{
 
 button{
     background-color: var(--blue);
-    margin: 2rem;
+    margin: auto;
     width: 233px;
     height: 34px;
     padding: 5px;
@@ -55,6 +54,14 @@ button{
     color: white;
     font-weight: 600;
     font-size: 20px;
+}
+
+.center-button{
+    margin: 3rem auto 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 section{
@@ -201,5 +208,17 @@ input{
     padding-top: 1.8rem;
 }
 
+footer{
+    height: 4rem;
+    width: 100%;
+    background-color: #00865E;
+}
+
+.footer-contacts{
+    margin: var(--margin-nav-and-foot);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 

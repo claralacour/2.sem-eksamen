@@ -33,7 +33,6 @@ h1{
 }
 
 h2{
-    margin: var(--margin-main);
     font-weight: 600;
     font-size: 24px;
 }
@@ -56,6 +55,8 @@ button{
     font-size: 20px;
 }
 
+/***************INDEX SIDE***************/
+
 .center-button{
     margin: 3rem auto 3rem auto;
     display: flex;
@@ -71,13 +72,16 @@ section{
     padding-bottom: 0;
 }
 
-.top-design{
-    position: relative;
-    padding: 3rem;
+.flex-center{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.top-design{
+    position: relative;
+    padding: 3rem;
     background: rgb(0,151,106);
     background: linear-gradient(180deg, rgba(0,151,106,1) 0%, rgba(130,220,174,1) 100%);
 }
@@ -133,7 +137,7 @@ input{
     fill: #5AC58F;
 }
 
-/*Blogindlæg siden"*/
+/*********BLOGINDLÆG INDEX***************/
 
 .blog-wrapper{
     margin: var(--margin-main);
@@ -157,9 +161,12 @@ input{
     height: 0;
 }
 
+.blog-container li{
+    padding-left: 1rem;
+}
+
 .post img{
     height: 9rem;
-    padding: 1rem;
     flex: 1 0 100%;
 }
 
@@ -208,6 +215,8 @@ input{
     padding-top: 1.8rem;
 }
 
+/***********************FOOTER*******************/
+
 footer{
     height: 4rem;
     width: 100%;
@@ -217,8 +226,24 @@ footer{
 .footer-contacts{
     margin: var(--margin-nav-and-foot);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 
+/*******************BLOGSIDE***********************/
+
+#blogtxt{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.blog-grid{
+    margin: var(--margin-main);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }

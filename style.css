@@ -175,6 +175,18 @@ input{
     
 }
 
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row p{
+    margin: 0;
+    padding-right: 1rem;
+    font-size: 12px;
+}
+
 .comparetitel{
     text-align: center;
 }

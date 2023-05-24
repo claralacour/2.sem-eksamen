@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b90453362e.js" crossorigin="anonymous"></script>
     <script src="blogscroller.js" defer></script>
+    <script src="compare.js" defer></script>
     <title>GreenWheels</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
         <input type="text" placeholder="Indtast din benzin/diesel bil">
         <img src="img/graphics/arrow.svg" alt="Sammenligningspil">
         <input type="text" placeholder="Indtast din ønskede elbil">
-        <button class="center-button">Sammenlign!</button>
+        <button onclick="show()" class="center-button">Sammenlign!</button>
         <div class="wavetop">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -27,7 +28,7 @@
             </svg>
         </div>
     </section>
-
+    
     <section class="bottomwave">
         <div class="wavebtm">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -37,7 +38,41 @@
             </svg>
         </div>
     </section>
-
+    
+    <div id="compare">
+        <div class="benzin">
+            <img src="img/cars/vw.png" alt="VW T-roc benzinbil">
+            <h3 class="comparetitel">VW T-roc</h2>
+            <div class="comparison">
+                <h4 class="darker">CO2</h4>
+                <h4>Grøn afgift</h4>
+                <h4 class="darker">Pris</h4>
+                <h4>Brændstofforbrug</h4>
+                <h4 class="darker">Drivmiddel</h4>
+                <h4>Acceleration</h4>
+                <h4 class="darker">Geartype</h4>
+                <h4>Tophastighed</h4>
+                <h4 class="darker">Ydelse</h4>
+                <h4>Modelår</h4>
+                <h4 class="darker">Vægt</h4>
+            </div>
+        </div>
+        <div class="elbil">
+            <img src="img/cars/skoda.png" alt="Skoda Enyaq elbil">
+            <h3 class="comparetitel">Skoda Enyaq</h3>
+            <h4 class="darker">CO2</h4>
+            <h4>Grøn afgift</h4>
+            <h4 class="darker">Pris</h4>
+            <h4>Energiforbrug</h4>
+            <h4 class="darker">Drivmiddel</h4>
+            <h4>Acceleration</h4>
+            <h4 class="darker">Rækkevidde</h4>
+            <h4>Tophastighed</h4>
+            <h4 class="darker">Ydelse</h4>
+            <h4>Modelår</h4>
+            <h4 class="darker">Vægt</h4>
+        </div>
+    </div>
     
     <section class="blog-wrapper">
         <h2>Nyeste viden om elbiler</h2>

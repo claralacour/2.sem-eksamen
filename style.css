@@ -49,6 +49,11 @@ h3{
     font-size: 20px;
 }
 
+h4{
+    font-size: 10px;
+    color: var(--primary-green);
+}
+
 button{
     position: relative;
     background-color: var(--blue);
@@ -144,6 +149,46 @@ input{
 .wavebtm .shape-fill {
     fill: #5AC58F;
 }
+
+/*********************SAMMENLIGNINGSDELEN**********************/
+#compare{
+    margin: var(--margin-main);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+#compare.hide{
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#compare h4{
+    padding-left: 0.5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.comparetitel{
+    text-align: center;
+}
+
+.comparison{
+    border-right: solid 2px var(--secondary-green);
+}
+
+.darker{
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+
+
 
 /*********BLOGINDLÆG INDEX***************/
 

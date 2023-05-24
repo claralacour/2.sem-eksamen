@@ -21,6 +21,7 @@ function carCompare(){
 function show(){  
 if(dinBenzin.value && dinEl.value != ""){
     compareBox.classList.toggle("unhide");
+    dinBenzin.style.backgroundColor = "white"
 }
 
 else{

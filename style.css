@@ -158,12 +158,14 @@ input{
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
-}
-
-#compare.hide{
     height: 0;
     opacity: 0;
     overflow: hidden;
+}
+
+#compare.unhide{
+    opacity: 1;
+    height: auto;
 }
 
 #compare h4{
@@ -243,6 +245,7 @@ input{
     text-decoration: none;
     font-style: italic;
     color: var(--blue);
+
 }
 
 .arrow{

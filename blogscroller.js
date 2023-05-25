@@ -10,6 +10,9 @@ let slideInterval;
 //først laves en funktion til at rykke til den næste side - man bruger post width til at finde ud af hvor mange pixels skal rykkes pr gang
 //
 //den finder altså værdien af bredden for et post, og increaser den der hedder scrollLeft af blogcontainer med postwidth
+
+
+
 function moveToNextSlide(){
     let postWidth = post[0].offsetWidth;
     blogContainer.scrollLeft += postWidth;
@@ -24,12 +27,12 @@ function moveToPrevSlide(){
     blogContainer.scrollLeft -= postWidth;
 }
 
-//funktion der starter tidsintervallet
+// funktion der starter tidsintervallet
 function startSlideInterval(){
     slideInterval = setInterval(moveToNextSlide, 3000);
 }
 
-//funktion der stopper tidsintervallet på slides
+// funktion der stopper tidsintervallet på slides
 function stopSlideInterval(){
     clearInterval(slideInterval);
 }
@@ -48,3 +51,7 @@ prevButton.addEventListener("click", () => {
 
 //her startes funktionen når siden loader
 startSlideInterval();
+
+
+
+

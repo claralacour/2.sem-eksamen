@@ -8,6 +8,8 @@ let dinBenzin = document.getElementById("dinBenzin");
 let dinEl = document.getElementById("dinEl");
 let dinBenzinBil = document.getElementById("dinBenzinBil");
 let dinElBil = document.getElementById("dinElBil");
+let errorArray = ["Du skal udfylde feltet med en gyldig benzinbil", "Du skal udfylde feltet med en gyldig elbil."];
+
 
 
 
@@ -18,14 +20,20 @@ function carCompare(){
     
 }
 
-function show(){  
-if(dinBenzin.value && dinEl.value != ""){
-    compareBox.classList.toggle("unhide");
-    dinBenzin.style.backgroundColor = "white"
-}
-
-else{
-    dinBenzin.placeholder = "Du skal udfylde feltet for at det virker makker!";
-    dinBenzin.style.backgroundColor = "red"
-}
-}
+function show(){ 
+    
+    for (let i = 0; i < 2; i++) {
+        if(dinBenzin.value && dinEl.value != ""){
+            compareBox.classList.toggle("unhide");
+            dinBenzin.style.border = "none";
+            dinBenzin.style.border = "none";
+        }
+        
+        else{
+            dinBenzin.placeholder = errorArray[0];
+            dinBenzin.style.border = "solid 1px red";
+            dinEl.placeholder = errorArray[i];
+            dinEl.style.border = "solid 1px red";
+        }
+    }
+} 

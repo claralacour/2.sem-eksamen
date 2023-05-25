@@ -324,10 +324,12 @@ footer{
     color: white;
     font-weight: 400;
     font-size: 15px;
+    padding-bottom: 2rem;
 }
 
 .blog-grid{
     margin: var(--margin-main);
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -342,6 +344,7 @@ footer{
 } 
 
 #blogsiteheader{
+    padding-top: 3rem;
     font-size: 18px;
     line-height: 1.5rem;
 }
@@ -355,6 +358,10 @@ footer{
     height: 6px;
     width: var(--progress);
     background-color: var(--secondary-green);
+}
+
+.top-blogpost{
+    padding-bottom: 3rem;
 }
 
 
@@ -429,6 +436,49 @@ footer{
     }
 
     .contacts{
+        padding-left: 2rem;
+    }
+
+    .blogtitel{
+        text-align: left;
+    }
+
+    #blogtxt{
+        font-size: 18px;
+    }
+
+    .blog-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding-bottom: 2rem;
+    }
+
+    .post img{
+        height: 15rem;
+    }
+
+    .top-blogpost{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #blogsiteheader{
+        font-size: 30px;
+        line-height: 2.5rem;
+    }
+
+    .blogpost{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #blogimg{
         padding-left: 2rem;
     }
 

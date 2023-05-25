@@ -41,7 +41,7 @@ h1{
 
 h2{
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h3{
@@ -101,7 +101,8 @@ section{
 
 input{
     margin: var(--margin-main);
-    width: 20rem;
+    width: 100%;
+    max-width: 50rem;
     height: 2rem;
     border-radius: 5px;
     border: none;
@@ -146,13 +147,13 @@ input{
     overflow: hidden;
     line-height: 0;
 }
+
 .wavebtm .shape-fill {
     fill: #5AC58F;
 }
 
 /*********************SAMMENLIGNINGSDELEN**********************/
 #compare{
-    margin: var(--margin-main);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -206,10 +207,16 @@ input{
 
 /*********BLOGINDLÆG INDEX***************/
 
+#indexblogtitel{
+    margin: var(--margin-main);
+    padding-top: 3rem;
+}
+
 .blog-wrapper{
     margin: var(--margin-main);
     position: relative;
     overflow: hidden;
+    display: flex;
 }
 
 .blog-container{
@@ -229,7 +236,7 @@ input{
 }
 
 .blog-container li{
-    padding-left: 1rem;
+    padding-right: 0.8rem;
 }
 
 .post img{
@@ -252,7 +259,7 @@ input{
     position: absolute;
     display: flex;
     bottom: 50%;
-    margin: auto;
+    margin: 0;
     height: 4rem;
     background-color: var(--blue);
     border: none;
@@ -264,13 +271,11 @@ input{
 
 #slide-arrow-prev {
     left: 0;
-    padding-left: 0.25rem;
     border-radius: 0 2rem 2rem 0;
   }
 
 #slide-arrow-next {
     right: 0;
-    padding-right: 0.25rem;
     border-radius: 2rem 0 0 2rem;
   }
 
@@ -295,10 +300,17 @@ footer{
 }
 
 .footer-contacts{
-    margin: var(--margin-nav-and-foot);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-contents{
+    padding-right: 1em;
+}
+
+.contacts{
+    padding-left: 1rem;
 }
 
 
@@ -339,4 +351,93 @@ footer{
     height: 6px;
     width: var(--progress);
     background-color: var(--secondary-green);
+}
+
+
+/******************** media querys***************/
+
+@media screen and (min-width: 800px) {
+    .title{
+        text-align: center;
+    }
+
+    .flex-center{
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    #comparearrow{
+        transform: rotate(270deg);
+    }
+
+    h1{
+        font-size: 40px;
+    }
+    
+    h2{
+        font-size: 28px;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    .wavetop{
+        height: 80px;
+    }
+    .wavebtm svg{
+        height: 80px;
+        width: 100%;
+    }
+    .comparecar{
+        padding-top: 3rem;
+        height: 10rem;
+    }
+    .row p{
+        font-size: 15px;
+    }
+
+    .blog-wrapper{
+        margin: auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        max-width: 50rem;
+        padding-top: 3rem;
+    }
+    .blog-container img{
+        height: 15rem;
+    }
+
+    .post p{
+        font-size: 18px;
+    }
+
+    .post a{
+        font-size: 18px;
+    }
+
+    button{
+        width: 300px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .contacts{
+        padding-left: 2rem;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    .row p{
+        font-size: 18px;
+    }
+    
+    .row h4{
+        font-size: 15px;
+    }
 }

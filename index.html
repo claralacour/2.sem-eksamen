@@ -14,11 +14,13 @@
     <nav>
         <a href="#"><img class="logo" src="img/graphics/greenwheels.svg" alt="GreenWheels logo"></a>
     </nav>
-    <section class="top-design flex-center">
+    <section class="top-design">
         <h1 class="title">Skift til elbil, nemt og overskueligt!</h1>
+        <div class="flex-center">    
             <input id="dinBenzin" type="text" placeholder="Indtast din benzin/diesel bil" value="">
-            <img src="img/graphics/arrow.svg" alt="Sammenligningspil">
+            <img id="comparearrow" src="img/graphics/arrow.svg" alt="Sammenligningspil">
             <input id="dinEl" type="text" placeholder="Indtast din ønskede elbil" value="">
+        </div>
             <button onclick="show(); carCompare();" class="center-button">Sammenlign!</button>
         <div class="wavetop">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -41,7 +43,7 @@
     
     <div id="compare">
         <div class="benzin">
-            <img src="img/cars/vw.png" alt="VW T-roc benzinbil">
+            <img class="comparecar" src="img/cars/vw.png" alt="VW T-roc benzinbil">
             <h3 id="dinBenzinBil" class="comparetitel">VW T-roc</h2>
             <div class="comparison">
                 <div class="row darker">
@@ -91,7 +93,7 @@
             </div>
         </div>
         <div class="elbil">
-            <img src="img/cars/skoda.png" alt="Skoda Enyaq elbil">
+            <img class="comparecar" src="img/cars/skoda.png" alt="Skoda Enyaq elbil">
             <h3 id="dinElBil" class="comparetitel">Skoda Enyaq</h3>
                 <div class="row darker">
                     <h4>CO2</h4>
@@ -140,8 +142,8 @@
         </div>
     </div>
     
+    <h2 id="indexblogtitel">Nyeste viden om elbiler</h2>
     <section class="blog-wrapper">
-        <h2>Nyeste viden om elbiler</h2>
         <button class="arrow" id="slide-arrow-prev"><i class="fa-solid fa-chevron-left fa-2xs chevronarrowleft" style="color: #ffffff;"></i></button>
         <button class="arrow" id="slide-arrow-next"><i class="fa-solid fa-chevron-right fa-2xs chevronarrowright" style="color: #ffffff;"></i></button>
         
@@ -188,10 +190,12 @@
     <footer>
         <div class="footer-contacts">
             <a href="#"><img class="logo" src="img/graphics/greenwheels.svg" alt="GreenWheels logo"></a>
-            <a href="#"><img src="img/graphics/linkedin.svg" alt="LinkedIn link"></a>
-            <a href="#"><img src="img/graphics/facebook.svg" alt="FaceBook link"></a>
-            <a href="#"><img src="img/graphics/mail.svg" alt="Mail link"></a>
-            <a href="#"><img src="img/graphics/phone.svg" alt="Telefon link"></a>
+            <div class="footer-contents">
+                <a href="#"><img class="contacts" src="img/graphics/linkedin.svg" alt="LinkedIn link"></a>
+                <a href="#"><img class="contacts" src="img/graphics/facebook.svg" alt="FaceBook link"></a>
+                <a href="#"><img class="contacts" src="img/graphics/mail.svg" alt="Mail link"></a>
+                <a href="#"><img class="contacts" src="img/graphics/phone.svg" alt="Telefon link"></a>
+        </div>
         </div>        
     </footer>
 </body>

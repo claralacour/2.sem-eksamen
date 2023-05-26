@@ -206,6 +206,11 @@ input{
     background-color: rgba(230, 230, 230, 0.5);
 }
 
+.comparecar{
+    padding-top: 3rem;
+    height: 5rem;
+}
+
 
 
 
@@ -394,6 +399,12 @@ footer{
         font-size: 12px;
     }
 
+    input{
+        width: 50%;
+        margin: auto;
+
+    }
+
     .wavetop{
         height: 80px;
     }
@@ -460,11 +471,16 @@ footer{
         height: 15rem;
     }
 
+    .post p{
+        margin-right: 5rem;
+    }
+
     .top-blogpost{
         padding-top: 5rem;
         padding-bottom: 3rem;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -479,9 +495,14 @@ footer{
     }
 
     #blogimg{
-        padding-left: 2rem;
+        margin: var(--margin-main);
+        width: 25rem;
     }
 
+    p{
+        font-size: 18px;
+    }
+    
 }
 
 
@@ -493,5 +514,10 @@ footer{
     
     .row h4{
         font-size: 15px;
+    }
+
+    #blogimg{
+        padding-left: 2rem;
+        width: 30rem;
     }
 }

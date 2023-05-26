@@ -24,7 +24,7 @@ function show(){
 if(dinBenzin.value && dinEl.value != ""){
     compareBox.classList.toggle("unhide");
     dinBenzin.style.border = "none";
-    dinBenzin.style.border = "none";
+    dinEl.style.border = "none";
 }
 
 else{

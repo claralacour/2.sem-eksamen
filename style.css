@@ -105,7 +105,7 @@ section{
 
 input{
     margin: var(--margin-main);
-    width: 100%;
+    width: 20rem;
     max-width: 50rem;
     height: 2rem;
     border-radius: 5px;
@@ -113,6 +113,21 @@ input{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
     font-family: 'inter', sans-serif;
     padding-left: 1rem;
+}
+
+.suggestionslist{
+    text-align: left;
+    margin: 0;
+    background-color: white;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 /*waves*/
@@ -401,8 +416,6 @@ footer{
 
     input{
         width: 50%;
-        margin: auto;
-
     }
 
     .wavetop{

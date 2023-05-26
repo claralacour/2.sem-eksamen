@@ -21,17 +21,23 @@ function carCompare(){
 }
 
 function show(){  
-if(dinBenzin.value && dinEl.value != ""){
-    compareBox.classList.toggle("unhide");
-    dinBenzin.style.border = "none";
-    dinEl.style.border = "none";
+    if(dinBenzin.value || dinEl.value != ""){
+        compareBox.classList.toggle("unhide");
+        dinBenzin.style.border = "none";
+        dinEl.style.border = "none";
 }
 
-else{
-    dinBenzin.placeholder = errorArray[0];
-    dinBenzin.style.border = "solid 1px red";
-    dinEl.placeholder = errorArray[1];
-    dinEl.style.border = "solid 1px red";
-}
+    else{
+        for (let i = 0; i < errorArray.length; i++){
+            if (!dinBenzin.value){
+                dinBenzin.placeholder = errorArray[i];
+                dinBenzin.style.border = "solid 1px red";
+            }
+            if (!dinEl.value){
+                dinEl.placeholder = errorArray[i];
+                dinEl.style.border = "solid 1px red";
+            }
+        }
+    }
 }
 

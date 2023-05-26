@@ -104,7 +104,7 @@ section{
 }
 
 input{
-    margin: var(--margin-main);
+    margin: 0;
     width: 20rem;
     max-width: 50rem;
     height: 2rem;
@@ -128,6 +128,25 @@ input{
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.inputbtn{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+    font-weight: 100;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.inputbutton{
+    margin: var(--margin-main);
+    width: 100%;
+    position: relative;
 }
 
 /*waves*/

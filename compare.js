@@ -1,8 +1,5 @@
 let compareBox = document.getElementById("compare");
 
-//den her funktion sørger for at sammenligningsboxen bliver vist, når der bliver trykket på knappen, med
-//vores lille animation wuhu 
-
 
 let dinBenzin = document.getElementById("dinBenzin");
 let dinEl = document.getElementById("dinEl");
@@ -30,11 +27,11 @@ function show(){
     else{
         for (let i = 0; i < errorArray.length; i++){
             if (!dinBenzin.value){
-                dinBenzin.placeholder = errorArray[i];
+                dinBenzin.placeholder = errorArray[0];
                 dinBenzin.style.border = "solid 1px red";
             }
             if (!dinEl.value){
-                dinEl.placeholder = errorArray[i];
+                dinEl.placeholder = errorArray[1];
                 dinEl.style.border = "solid 1px red";
             }
         }

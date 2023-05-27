@@ -31,7 +31,7 @@ function show(){
                 dinBenzin.style.border = "solid 1px red";
             }
             if (!dinEl.value){
-                dinEl.placeholder = errorArray[1];
+                dinEl.placeholder = errorArray[i];
                 dinEl.style.border = "solid 1px red";
             }
         }

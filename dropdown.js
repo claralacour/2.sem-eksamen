@@ -9,18 +9,18 @@ let elList = document.getElementById("elList");
 
 
 
-benzinInput.addEventListener("input", () => {
-    //her clear vi listen
-    benzinList.innerHTML ="";
-    //vi laver et loop der looper gennem arrayet 
-    for (let i = 0; i < benzinCars.length; i++) {
-            let benzinSuggestion = document.createElement("div");
-            benzinSuggestion.textContent = benzinCars[i];
-            benzinList.appendChild(benzinSuggestion);
-        }
-    } 
+// benzinInput.addEventListener("input", () => {
+//     //her clear vi listen
+//     benzinList.innerHTML ="";
+//     //vi laver et loop der looper gennem arrayet 
+//     for (let i = 0; i < benzinCars.length; i++) {
+//             let benzinSuggestion = document.createElement("div");
+//             benzinSuggestion.textContent = benzinCars[i];
+//             benzinList.appendChild(benzinSuggestion);
+//         }
+//     } 
 
-);
+// );
 
 
 // function suggestEl

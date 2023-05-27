@@ -6,6 +6,7 @@
     --blue: #348585;
     --margin-nav-and-foot: 1rem;
     --margin-main:  1rem 2rem 1rem 2rem;
+    --off-white: #EEEEEE;
 }
 
 *{
@@ -20,7 +21,7 @@ nav{
     width: 100%;
     position: fixed;
     z-index: 1;
-    background-color: #00976A;
+    background-color: rgb(0,151,106);
 
 }
 
@@ -36,7 +37,7 @@ nav{
 h1{ 
     font-weight: 600;
     font-size: 24px;
-    color: white;
+    color: var(--off-white);
 }
 
 h2{
@@ -63,7 +64,7 @@ button{
     padding: 5px;
     border-radius: 8px;
     border: none;
-    color: white;
+    color: var(--off-white);
     font-weight: 600;
     font-size: 20px;
 }
@@ -118,7 +119,7 @@ input{
 .suggestionslist{
     text-align: left;
     margin: 0;
-    background-color: white;
+    background-color: var(--off-white);
     font-size: 15px;
     line-height: 1.5rem;
 }
@@ -360,7 +361,7 @@ footer{
 /*******************BLOGOVERSIGT***********************/
 
 #blogtxt{
-    color: white;
+    color: var(--off-white);
     font-weight: 400;
     font-size: 15px;
     padding-bottom: 2rem;

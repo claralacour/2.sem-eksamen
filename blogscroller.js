@@ -1,5 +1,6 @@
 let blogContainer = document.getElementById("blog-container");
 let post = document.querySelectorAll(".post");
+
 let prevButton = document.getElementById("slide-arrow-prev");
 let nextButton = document.getElementById("slide-arrow-next");
 let slideInterval;

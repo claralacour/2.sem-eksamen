@@ -1,14 +1,9 @@
 let compareBox = document.getElementById("compare");
-
-
 let dinBenzin = document.getElementById("dinBenzin");
 let dinEl = document.getElementById("dinEl");
 let dinBenzinBil = document.getElementById("dinBenzinBil");
 let dinElBil = document.getElementById("dinElBil");
 let errorArray = ["Du skal udfylde feltet med en gyldig benzinbil", "Du skal udfylde feltet med en gyldig elbil."];
-
-
-
 
 
 function carCompare(){

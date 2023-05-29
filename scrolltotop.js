@@ -1,6 +1,6 @@
 let scrollBtn = document.getElementById("scrollbtn");
 
-//når brugeren scroller ned til 30px fra toppen vis knappen
+
 
 window.onscroll = function () {scrollButton()};
 

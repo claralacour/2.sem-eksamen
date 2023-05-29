@@ -105,9 +105,8 @@ section{
 }
 
 input{
-    margin: 0;
+    margin: 1rem;
     width: 20rem;
-    max-width: 50rem;
     height: 2rem;
     border-radius: 5px;
     border: none;
@@ -415,6 +414,7 @@ footer{
     .flex-center{
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         text-align: center;
     }
 
@@ -435,7 +435,7 @@ footer{
     }
 
     input{
-        width: 50%;
+        width: 50;
     }
 
     .wavetop{

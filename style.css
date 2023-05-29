@@ -438,6 +438,10 @@ footer{
         width: 50;
     }
 
+    #indexblogtitel{
+        padding-top: 4rem;
+    }
+
     .wavetop{
         height: 80px;
     }
@@ -459,7 +463,7 @@ footer{
         align-content: center;
         justify-content: center;
         max-width: 50rem;
-        padding-top: 3rem;
+        padding-top: 1rem;
     }
     .blog-container img{
         height: 15rem;

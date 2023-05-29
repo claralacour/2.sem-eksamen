@@ -69,6 +69,20 @@ button{
     font-size: 20px;
 }
 
+.button{
+    position: relative;
+    background-color: var(--blue);
+    margin: auto;
+    width: 233px;
+    height: 34px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    color: var(--off-white);
+    font-weight: 600;
+    font-size: 20px;
+}
+
 a{
     text-decoration: none;
 }

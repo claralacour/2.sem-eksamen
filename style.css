@@ -403,6 +403,16 @@ footer{
     padding-bottom: 3rem;
 }
 
+#scrollbtn{
+    display: none;
+    position: fixed;
+    bottom: 4rem;
+    width: 4rem;
+    right: 30px;
+    z-index: 2;
+    cursor: pointer;
+}
+
 
 /******************** media querys***************/
 

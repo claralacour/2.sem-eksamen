@@ -1,7 +1,16 @@
 
 console.log("js is running...");
 
+
+let compareBox = document.getElementById("compare");
+let benzinInput = document.getElementById("dinbenzin");
+let elInput = document.getElementById("dinel");
+let dinBenzinBil = document.getElementById("dinBenzinBil");
+let dinElBil = document.getElementById("dinElBil");
+let errorArray = ["Du skal udfylde feltet med en gyldig benzinbil", "Du skal udfylde feltet med en gyldig elbil."];
+
 const benzinList = ["VW T-Roc", "Citroën C4 Cactus", "Ford Fiesta", "Kia Rio", "Audi A1", "Fiat Punto"];
+const elBilList = ["Skoda Enyaq", "VW ID.4", "Tesla Model Y", "Audi Q4 e-tron", "Polestar 2", "Ford Mustand Mach-E", "BMW iX3"];
 
 
 //når vi skriver noget i parantes, betyder det at funktion bruger disse parametre. Vi kan bruge parametrene til at få værdier igennem funktionen
@@ -51,70 +60,63 @@ function autoComplete(benzinInput, benzinList){
 autoComplete(document.getElementById('dinbenzin'), benzinList);
 
 //nu til elbilen////////////
-const elBilList = ["Skoda Enyaq", "VW ID.4", "Tesla Model Y", "Audi Q4 e-tron", "Polestar 2", "Ford Mustand Mach-E", "BMW iX3"];
 
 function autoComplete(elInput, elBilList){
-    benzinInput.addEventListener('input', function(){
+    elInput.addEventListener('input', function(){
         closeList();
 
         if (!this.value)
             return;
 
-        suggestions = document.createElement('div');
-        suggestions.setAttribute('id', 'suggestions');
-        this.parentNode.appendChild(suggestions);
+        elSuggestions = document.createElement('div');
+        elSuggestions.setAttribute('id', 'elsuggestions');
+        this.parentNode.appendChild(elSuggestions);
         
         for (let i=0; i<elBilList.length; i++){
             if (elBilList[i].toUpperCase().includes(this.value.toUpperCase())){
-                suggestion = document.createElement('div');
-                suggestion.innerHTML = elBilList[i];
-                suggestion.addEventListener('click', function(){
+                elsuggestion = document.createElement('div');
+                elsuggestion.innerHTML = elBilList[i];
+                elsuggestion.addEventListener('click', function(){
                     elInput.value = this.innerHTML;
                     closeList();
                 });
-                suggestions.appendChild(suggestion);
+                elSuggestions.appendChild(elsuggestion);
             }
         }
     });
     function closeList(){
-        let suggestions = document.getElementById("suggestions");
-        if (suggestions)
-        suggestions.parentNode.removeChild(suggestions);
+        let elSuggestions = document.getElementById("elsuggestions");
+        if (elSuggestions)
+        elSuggestions.parentNode.removeChild(elSuggestions);
     }
 }
 autoComplete(document.getElementById('dinel'), elBilList);
 
 
 //sammenligningsbox/////////////////////////////
-let compareBox = document.getElementById("compare");
-let dinBenzin = document.getElementById("dinbenzin");
-let dinEl = document.getElementById("dinel");
-let dinBenzinBil = document.getElementById("dinBenzinBil");
-let dinElBil = document.getElementById("dinElBil");
-let errorArray = ["Du skal udfylde feltet med en gyldig benzinbil", "Du skal udfylde feltet med en gyldig elbil."];
 
 function carCompare(){
-    dinBenzinBil.innerHTML = dinBenzin.value;
-    dinElBil.innerHTML = dinEl.value;
+    dinBenzinBil.innerHTML = benzinInput.value;
+    dinElBil.innerHTML = elInput.value;
     
 }
 
 function show(){  
-    if(dinBenzin.value || dinEl.value != ""){
+    if(benzinInput.value && elInput.value != ""){
         compareBox.classList.toggle("unhide");
-        dinBenzin.style.border = "none";
-        dinEl.style.border = "none";
+        benzinInput.style.border = "none";
+        elInput.style.border = "none";
 }
 
     else{
         for (let i = 0; i < errorArray.length; i++){
-            if (!dinBenzin.value){
-                dinBenzin.placeholder = errorArray[0];
-                dinBenzin.style.border = "solid 1px red";
+            if (!benzinInput.value){
+                benzinInput.placeholder = errorArray[0];
+                benzinInput.style.border = "solid 1px red";
             }
-            if (!dinEl.value){
-                dinEl.placeholder = errorArray[i];
-                dinEl.style.border = "solid 1px red";
+            if (!elInput.value){
+                elInput.placeholder = errorArray[i];
+                elInput.style.border = "solid 1px red";
             }
         }
     }

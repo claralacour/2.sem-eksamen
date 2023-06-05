@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/b90453362e.js" crossorigin="anonymous"></script>
     <script src="blogscroller.js" defer></script>
     <script src="compare.js" defer></script>
+    <script src="autocomplete.js" defer></script>
     <title>GreenWheels</title>
 </head>
 <body>
@@ -16,12 +17,18 @@
     </nav>
     <section class="top-design">
         <h1 class="title">Skift til elbil, nemt og overskueligt!</h1>
-        <div class="flex-center">   
-            <input id="dinBenzin" type="text" placeholder="Indtast din benzin/diesel bil" value="">
-            <!-- <div class="suggestionslist" id="benzinList"></div> -->
-            <img id="comparearrow" src="img/graphics/arrow.svg" alt="Sammenligningspil">
-            <input id="dinEl" type="text" placeholder="Indtast din ønskede elbil" value="">
-            <div class="suggestionslist" id="elList"></div>
+        <div class="flex-center">
+            <form autocomplete="off">
+                <div>  
+                    <input id="dinBenzin" type="text" placeholder="Indtast din benzin/diesel bil" value="">
+                </div>
+                </form>
+                <img id="comparearrow" src="img/graphics/arrow.svg" alt="Sammenligningspil">
+            <form autocomplete="off">
+                <div>
+                    <input id="dinEl" type="text" placeholder="Indtast din ønskede elbil" value="">
+                </div>
+            </form>
         </div>
             <button onclick="show(); carCompare();" class="center-button">Sammenlign!</button>
         <div class="wavetop">

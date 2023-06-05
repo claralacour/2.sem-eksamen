@@ -31,6 +31,11 @@ function autoComplete(benzinInput, benzinList){
                 suggestion = document.createElement('div');
                 //dernæst ændrer vi teksten i listen til at være det der står i vores array
                 suggestion.innerHTML = benzinList[i];
+                //her tilføjer vi en eventlistener til vores suggestion liste
+                suggestion.addEventListener('click', function(){
+                    benzinInput.value = this.innerHTML;
+                    closeList();
+                });
                 //til sidst siger vi at det er et child element til "suggestions", det gør den til en del af vores første liste
                 suggestions.appendChild(suggestion);
             }
